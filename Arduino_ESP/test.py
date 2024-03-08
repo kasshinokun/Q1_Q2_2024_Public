@@ -1,3 +1,8 @@
+#################################################################################
+#Credits by development of code:
+#https://www.geeksforgeeks.org/python-mysql-insert-record-if-not-exists-in-table/
+#################################################################################
+
 #Insert Record When The Record Does Not Exists
 
 # import required modules
