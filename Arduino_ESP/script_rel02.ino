@@ -4,7 +4,12 @@
 
 //-------------------------------------------------------------------------
 //Definição de I/O
-
+#include "dht.h" //INCLUSÃO DE BIBLIOTECA
+ 
+const int DHT11_1 = A2; //PINO ANALÓGICO UTILIZADO PELO DHT11
+ 
+dht DHT; //VARIÁVEL DO TIPO DHT
+ 
 //Entradas (nome e número do pino)
 #define Key_01 12
 #define Key_02 13
@@ -55,3 +60,22 @@ void loop(){
 
 }
 
+
+ 
+void temperatura_umidade(){
+#Fonte: https://blogmasterwalkershop.com.br/arduino/
+#como-usar-com-arduino-sensor-de-umidade-e-temperatura-dht11
+
+  DHT.read11(DHT11_1); //LÊ AS INFORMAÇÕES DO SENSOR
+  Serial.print("Umidade: "); //IMPRIME O TEXTO NA SERIAL
+  Serial.print(DHT.humidity); //IMPRIME NA SERIAL O VALOR DE UMIDADE MEDIDO
+  Serial.print("%"); //ESCREVE O TEXTO EM SEGUIDA
+  Serial.print(" / Temperatura: "); //IMPRIME O TEXTO NA SERIAL
+  Serial.print(DHT.temperature, 0); //IMPRIME NA SERIAL O VALOR DE UMIDADE MEDIDO E REMOVE A PARTE DECIMAL
+  Serial.println("*C"); //IMPRIME O TEXTO NA SERIAL
+  delay(2000); //INTERVALO DE 2 SEGUNDOS * NÃO DIMINUIR ESSE VALOR
+}
+void screen(){
+
+
+}
