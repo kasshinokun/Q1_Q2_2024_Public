@@ -1,5 +1,5 @@
 /*
-
+=========================Relatorio 01 versao 01 ============================================================================
 Código do trabalho entregue por Gabriel Cassino
 
 Base code from: https://lobodarobotica.com/blog/web-server-com-esp32-conexao-wifi/
@@ -411,7 +411,7 @@ void loop() {
 }
 
 
-//-------------------------------------------------------------------------
+//=========================Relatorio 01 em  conjunto ==========================================================================
 //código a seguir desenvolvido por Gabriel Cassino e Bruno Henrique 
 
 //-------------------------------------------------------------------------
